@@ -1,0 +1,420 @@
+/* Body ki layout aur font settings */
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Elements par transition effects */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Sidebar ki styling aur layout */
+.sidebar {
+    width: 25vw;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Sidebar ke hover par background color change specially for kaushal sir */
+.sidebar:hover {
+    background-color: #e0e0e0;
+}
+
+/* Header ka layout aur spacing */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+/* Header ke hover par background color change */
+.header:hover {
+    background-color: #f0f0f0;
+}
+
+/* Small logo ka size aur spacing */
+.logo-small {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Big logo ka size */
+.logo-big {
+    width: 100px;
+    height: auto;
+}
+
+/* Profile section ka layout aur alignment */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Profile photo ka size aur circular shape */
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 9%;
+}
+
+/* Profile photo ke hover par zoom aur shadow effect */
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Username ka font size aur spacing */
+.username {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Username ke hover par color change */
+.username:hover {
+    color: #fd1d1d;
+}
+
+/* Username handle ka styling */
+.handle {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Handle ke hover par color change */
+.handle:hover {
+    color: #666;
+}
+
+/* Stats section ka layout aur alignment */
+.stats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Har stat item ka layout aur alignment */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* Stat item number ke hover par color change */
+.stat-item:hover .number {
+    color: #fd1d1d;
+}
+
+/* Stat number ka font size aur weight */
+.number {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Stat label ka font size aur color */
+.label {
+    font-size: 14px;
+    margin: 0;
+    color: #999;
+}
+
+/* Sidebar item ka layout aur spacing */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+/* Sidebar item hover effect */
+.sidebar-item:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Sidebar icons ka size aur spacing */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+/* Sidebar icon color change on hover */
+.sidebar-item:hover .icon {
+    color: #fd1d1d;
+}
+
+/* Sidebar item text ka styling */
+.text {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Home text ka color */
+.text.home {
+    color: #fd1d1d;
+}
+
+/* Divider ki styling */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Menu section ka layout */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu hover effect */
+.menu:hover {
+    background-color: #f5f5f5;
+}
+
+/* Menu icons ka size aur spacing */
+.menu .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+/* Menu text ka styling */
+.menu .text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Header controls (icons on the right) */
+.header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    gap: 20px;
+}
+
+/* Header icon ka size */
+.header-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Header icon hover effect */
+.header-controls:hover .header-icon {
+    color: #fd1d1d;
+}
+
+/* Add photo button ki styling */
+.add-photo {
+    background-color: #fd1d1d;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+
+/* Add photo button hover effect */
+.add-photo:hover {
+    background-color: #c81010;
+}
+
+/* Search bar ki styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* Search bar ke hover par background color change */
+.search-bar:hover {
+    background-color: #d5d5d5;
+}
+
+/* Search input field ka styling */
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+    padding-left: 8px;
+}
+
+/* Search icon ka size aur color */
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Stories section ki styling */
+.stories-section {
+    margin-left: 40px;
+}
+
+/* Stories title hover effect */
+.stories-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Stories title hover effect */
+.stories-title:hover {
+    color: #fd1d1d;
+}
+
+/* Stories ki alignment aur overflow */
+.stories {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+/* Gap between story circles */
+.story-circle {
+    margin-right: 15px;
+}
+
+/* Size of story circles */
+.story-circle {
+    width: 70px;
+    height: 70px;
+}
+
+.story-circle.first {
+    position: relative;
+}
+
+.plus-sign {
+    position: relative;
+    margin-right: 20px;
+}
+
+.story-circle-own {
+    position: relative;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Background image on story circle */
+.story-circle.first::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url('Logo 14.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Story circle ka hover effect */
+.story-circle:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Feed section ki styling */
+.feed-section {
+    margin-left: 40px;
+}
+
+/* Feed title hover effect */
+.feed-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Feed title hover effect */
+.feed-title:hover {
+    color: #fd1d1d;
+}
+
+/* Feed ki alignment aur wrapping */
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 10px gap between images */
+}
+
+/* Feed item hover effect */
+.feed-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For images arranged in a random manner */
+.feed-item.random {
+    width: calc(50% - 10px);
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style for feed images */
+.feed-image {
+    width: 25%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Feed image hover effect */
+.feed-image:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+/* Adjust icons in the feed */
+.feed-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: top 10px;
+}
